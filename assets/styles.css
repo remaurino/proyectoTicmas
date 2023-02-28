@@ -32,21 +32,28 @@ body.no-scroll{
   overflow: hidden;
 }
 
-header {
-  width: 100%;
-  position: fixed;
-  height: 60px;
-  display: flex;
-  justify-content:space-between;
-  align-items:center;
-  top: 0;
-  background: rgb(26,81,115);
-  background: linear-gradient(349deg, rgba(26,81,115,0.5626422443977591) 35%, rgba(151,151,199,0.9800091911764706) 63%);  z-index: 999999;
-  padding: 0px 25px;
+main.blur{
+  filter:blur(5px)
 }
 
+/*HEADER*/
+
+  header {
+    width: 100%;
+    position: fixed;
+    height: 60px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    top: 0;
+    background: rgb(26,81,115);
+    background: linear-gradient(349deg, rgba(26,81,115,0.5626422443977591) 35%, rgba(151,151,199,0.9800091911764706) 63%); 
+    z-index: 999999;
+    padding: 0px 25px;
+  }
+
   header i{
-      cursor: pointer;
+   cursor: pointer;
   }
 
   .navbar-list{
@@ -56,7 +63,7 @@ header {
     font-family: var(--font-hanken);
     cursor: pointer;
     transition: all 0.2s linear;
-    }
+  }
 
   .navbar-list {
     gap: 40px;
@@ -80,7 +87,7 @@ header {
   .fa-cube,
   .fa-bars{
     font-size: 150%;
-  }
+}
 
   .nav{
     position: absolute;
@@ -89,6 +96,7 @@ header {
     width: 60%;
     flex-direction: column;
     background: rgb(26,81,115);
+    background: linear-gradient(349deg, rgba(26,81,115,0.5626422443977591) 35%, rgba(151,151,199,0.9800091911764706) 63%);  
     border: groove;
     border-width: thin;
     border-top: 0px;
@@ -121,23 +129,23 @@ header {
 
 /*MAIN*/
 
-main {
-  margin-top: 60px;
-}
+  main {
+    margin-top: 60px;
+  }
 
-main h2{
-    font-family: var(--font-Abril);
-    text-align: center;
-    padding: 15px 20px;
-    position: relative;
-}
+  main h2{
+      font-family: var(--font-Abril);
+      text-align: center;
+      padding: 15px 20px;
+      position: relative;
+  }
 
 
 
 /*HERO*/
 
 
- #Hero {
+ #hero {
   background-image: url(./imagenes/pexels-lukas-574070.jpg);
   background-position: center;
   background-size: cover;
@@ -146,84 +154,84 @@ main h2{
  }
 
 
-.hero-txt {
-  display: flex;
-  flex-direction: column;
-  font-family: var(--font-hanken);
-  color: var(--backgroud-dos);
-  align-items: center;
-  align-content: center;
-  gap: 30px;
-  padding-top: 100px;
-  font-size: 30px;
+  .hero-txt {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-hanken);
+    color: var(--backgroud-dos);
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    padding-top: 100px;
+    font-size: 30px;
+    }
+
+  .hero-txt h1,
+  span {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
   }
 
-.hero-txt h1,
- span {
-  font-family: 'Abril Fatface', cursive;
-  font-size: 40px;
-  text-align: center;
-  font-weight: 700;
-}
 
+  .hero-txt h1{
+    margin-top: 20px;
+  }
+  .hero-txt h4{
+      text-align:center;
+  }
 
-.hero-txt h1{
-  margin-top: 20px;
-}
-.hero-txt h4{
-    text-align:center;
-}
+  .hero-list{
+    display: flex;
+    gap: 40px;
+    align-content: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: 250%;
+  }
 
-.hero-list{
-  display: flex;
-  gap: 40px;
-  align-content: center;
-  justify-content: center;
-  padding: 30px;
-  font-size: 250%;
-}
-
-.hero-list a{
-  text-decoration: none;
-  color: black;
-}
+  .hero-list a{
+    text-decoration: none;
+    color: black;
+  }
 
 /*EXPERIENCE - EDUCATION*/
 
-    #Experience{
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        margin-top: 65px;
-        border-bottom: groove thin;
-        padding-bottom: 40px;
-    }
-      
-    .info-conteiner{
-        display: flex;
-        flex-direction: column;
-    }
-    .info-conteiner h3{
-        text-align: center;
-        font-family: var(--font-hanken);
-    }
-    .info-conteiner p{
-        font-family: var(--font-hanken);
-        text-align: justify;
-    }
+  #experience{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 65px;
+    border-bottom: groove thin;
+    padding-bottom: 40px;
+  }
+    
+  .info-conteiner{
+    display: flex;
+    flex-direction: column;
+  }
+  .info-conteiner h3{
+    text-align: center;
+    font-family: var(--font-hanken);
+  }
+  .info-conteiner p{
+    font-family: var(--font-hanken);
+    text-align: justify;
+  }
 
-    #Education{
-        margin-top: 65px;
-        border-bottom: groove thin;
-        padding-bottom: 65px;
-    }
-    .fa-rectangle-terminal{
-      font-size: 150%;
-    }
+  #education{
+    margin-top: 65px;
+    border-bottom: groove thin;
+    padding-bottom: 65px;
+  }
+  .fa-rectangle-terminal{
+    font-size: 150%;
+  }
 
-  /* SKILLS   */
+/* SKILLS   */
 
-  #Skills{
+  #skills{
     margin-top: 65px;
     display: flex;
     flex-direction: column;
@@ -240,13 +248,14 @@ main h2{
 
 
 
-  /*CONTACT-US*/
+/*CONTACT-US*/
 
   #contact-us{
     flex-direction: column;
   }
   .contact-information{
     width: 100%;
+    align-items: center;
   }
   .information-conteiner{
     flex-direction: row;
@@ -257,8 +266,8 @@ main h2{
   }
   #contact-us{
     display: flex;
-    background: rgb(61,106,120);
-    background: linear-gradient(349deg, rgba(61,106,120,1) 32%, rgba(255,255,255,0.8323704481792717) 70%);
+    background: rgb(26,81,115);
+    background: linear-gradient(349deg, rgba(26,81,115,0.5626422443977591) 35%, rgba(151,151,199,0.9800091911764706) 63%);
 
   }
 
@@ -298,9 +307,8 @@ main h2{
   .contact-form{
     display: flex;
     flex-direction: column;
-    background: rgb(61,106,120);
-    background: linear-gradient(349deg, rgba(61,106,120,1) 32%, rgba(255,255,255,0.8323704481792717) 70%);
-    padding: 10px;
+    background: rgb(26,81,115);
+    background: linear-gradient(349deg, rgba(26,81,115,0.5626422443977591) 35%, rgba(151,151,199,0.9800091911764706) 63%);    padding: 10px;
   }
 
   .contact-form form{
@@ -355,7 +363,7 @@ main h2{
   }
 
 
-  /* FOOTER */
+/* FOOTER */
   footer{
     display: flex;
     font-family: var(--font-hanken);
@@ -365,13 +373,13 @@ main h2{
 
 
 
-  /*MEDIAQUERIES*/
+/*MEDIAQUERIES*/
 
   @media (min-width: 576px){
-    #Education p{
+    #education p{
       text-align: center;
     }
-    #Skills{
+    #skills{
       flex-direction: row;
       gap: 40px;
       justify-content: space-around;
@@ -404,8 +412,7 @@ main h2{
       background: none;
       background: none;
       border: none;
-      /* padding: 10px; */
-      z-index: 2;
+      Z-index: 2;
       animation: slide-down 0.5s ease-out;
       visibility: visible;
       font-size: medium;
@@ -452,7 +459,7 @@ main h2{
   }
 
 
-  /*ANIMACIONES Y TRANSICIONES*/
+/*ANIMACIONES Y TRANSICIONES*/
 
   @keyframes slide-up{
     from{
