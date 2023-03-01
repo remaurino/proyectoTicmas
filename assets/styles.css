@@ -239,14 +239,16 @@ main.blur{
     padding-bottom: 65px;
     border-bottom: groove thin;
   }
-
+  
+  
   .skills-list li{
     justify-content: flex-start;
     align-items:flex-start;
     font-family: var(--font-hanken);
+    
   }
-
-
+  
+ 
 
 /*CONTACT-US*/
 
